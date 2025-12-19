@@ -1,0 +1,5 @@
+add_executable(part11_monotonic_stack_test part11_monotonic_stack.cpp)
+
+target_link_libraries(part11_monotonic_stack_test PRIVATE part11_monotonic_stack)
+
+target_include_directories(part11_monotonic_stack_test PRIVATE ${PROJECT_SOURCE_DIR}/include)

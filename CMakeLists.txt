@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.10)
+project(AlgorithmCollection)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+include_directories(${PROJECT_SOURCE_DIR}/include)
+
+# add_subdirectory(sources/part01)
+# add_subdirectory(sources/part02)
+# add_subdirectory(sources/part03)
+# add_subdirectory(sources/part04)
+# add_subdirectory(sources/part05)
+# add_subdirectory(sources/part06)
+# add_subdirectory(sources/part07)
+# add_subdirectory(sources/part08)
+# add_subdirectory(sources/part09)
+# add_subdirectory(sources/part10)
+add_subdirectory(sources/part11_monotonic_stack)
+
+add_subdirectory(tests)
