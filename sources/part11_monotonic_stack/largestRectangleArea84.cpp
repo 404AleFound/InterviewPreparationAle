@@ -14,7 +14,7 @@
 */
 
 namespace LeetCode {
-int largestRectangleArea84(std::vector<int>& heights) {
+int Solution84::largestRectangleArea(std::vector<int>& heights) {
     std::stack<int> stk;
     heights.insert(heights.begin(), 0);
     heights.push_back(0);

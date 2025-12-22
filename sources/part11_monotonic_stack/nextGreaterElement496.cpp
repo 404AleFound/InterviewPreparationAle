@@ -18,7 +18,7 @@
 */
 
 namespace LeetCode {
-std::vector<int> nextGreaterElement496(std::vector<int>& nums1, std::vector<int>& nums2) {
+std::vector<int> Solution496::nextGreaterElement(std::vector<int>& nums1, std::vector<int>& nums2) {
     std::vector<int> res(nums1.size(), -1);
     std::stack<int> stk;
     std::unordered_map<int, int> umap(nums1.size());

@@ -1,5 +1,11 @@
 add_executable(part11_monotonic_stack_test part11_monotonic_stack.cpp)
+add_executable(part10_dynamic_programming_test part10_dynamic_programming.cpp)
 
 target_link_libraries(part11_monotonic_stack_test PRIVATE part11_monotonic_stack)
+target_link_libraries(part10_dynamic_programming_test PRIVATE part10_dynamic_programming)
 
 target_include_directories(part11_monotonic_stack_test PRIVATE ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(part10_dynamic_programming_test PRIVATE ${PROJECT_SOURCE_DIR}/include)
+
+add_test(NAME part11_monotonic_stack_test COMMAND part11_monotonic_stack_test)
+add_test(NAME part10_dynamic_programming_test COMMAND part10_dynamic_programming_test)

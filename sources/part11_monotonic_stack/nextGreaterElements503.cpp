@@ -13,7 +13,7 @@
     - 复制一份原来的数组即可
 */
 namespace LeetCode{
-std::vector<int> nextGreaterElements503(std::vector<int>& nums) {
+std::vector<int> Solution503::nextGreaterElements(std::vector<int>& nums) {
     std::stack<int> stk;
     std::vector<int> nums_(nums.begin(), nums.end());
     nums_.insert(nums_.end(), nums.begin(), nums.end());

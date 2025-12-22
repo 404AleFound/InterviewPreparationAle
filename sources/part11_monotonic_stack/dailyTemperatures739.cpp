@@ -8,7 +8,7 @@
     对于本题，求的是右边第一个大的温度，因此采用的单调栈应当为头小底大。
 */
 namespace LeetCode {
-std::vector<int> dailyTemperatures739(std::vector<int>& temperatures) {
+std::vector<int> Solution739::dailyTemperatures(std::vector<int>& temperatures) {
     std::vector<int> res(temperatures.size(), 0);
     std::stack<int> stk;
     stk.push(0);

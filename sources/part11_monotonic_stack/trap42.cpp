@@ -10,7 +10,7 @@
     - 注意这边计算雨水时要处理宽度
 */
 namespace LeetCode{
-int trap42(std::vector<int>& height) {
+int Solution42::trap(std::vector<int>& height) {
     int res = 0;
     std::stack<int> stk;
 

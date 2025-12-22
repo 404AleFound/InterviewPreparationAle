@@ -13,6 +13,7 @@
     } while(0)
 
 TEST(DailyTemperatures739) {
+    LeetCode::Solution739 sol;
     std::vector<int> test1{73,74,75,71,69,72,76,73};
     std::vector<int> test2{30,40,50,60};
     std::vector<int> test3{30,60,90};
@@ -21,9 +22,9 @@ TEST(DailyTemperatures739) {
     std::vector<int> ans2{1,1,1,0};
     std::vector<int> ans3{1,1,0};
 
-    std::vector<int> pre1 = LeetCode::dailyTemperatures739(test1);
-    std::vector<int> pre2 = LeetCode::dailyTemperatures739(test2);
-    std::vector<int> pre3 = LeetCode::dailyTemperatures739(test3);
+    std::vector<int> pre1 = sol.dailyTemperatures(test1);
+    std::vector<int> pre2 = sol.dailyTemperatures(test2);
+    std::vector<int> pre3 = sol.dailyTemperatures(test3);
 
     ASSERT_EQ(pre1, ans1);
     ASSERT_EQ(pre2, ans2);
@@ -31,6 +32,7 @@ TEST(DailyTemperatures739) {
 }
 
 TEST(nextGreaterElement496) {
+    LeetCode::Solution496 sol;
     std::vector<int> test1_1{4,1,2};
     std::vector<int> test1_2{1,3,4,2};
 
@@ -40,50 +42,53 @@ TEST(nextGreaterElement496) {
     std::vector<int> ans1{-1,3,-1};
     std::vector<int> ans2{3,-1};
 
-    std::vector<int> pre1 = LeetCode::nextGreaterElement496(test1_1, test1_2);
-    std::vector<int> pre2 = LeetCode::nextGreaterElement496(test2_1, test2_2);
+    std::vector<int> pre1 = sol.nextGreaterElement(test1_1, test1_2);
+    std::vector<int> pre2 = sol.nextGreaterElement(test2_1, test2_2);
 
     ASSERT_EQ(ans1, pre1);
     ASSERT_EQ(ans2, pre2);
 }
 
 TEST(nextGreaterElements503) {
+    LeetCode::Solution503 sol;
     std::vector<int> test1{1,2,1};
     std::vector<int> test2{1,2,3,4,3};
 
     std::vector<int> ans1{2,-1,2};
     std::vector<int> ans2{2,3,4,-1,4};
 
-    std::vector<int> pre1 = LeetCode::nextGreaterElements503(test1);
-    std::vector<int> pre2 = LeetCode::nextGreaterElements503(test2);
+    std::vector<int> pre1 = sol.nextGreaterElements(test1);
+    std::vector<int> pre2 = sol.nextGreaterElements(test2);
 
     ASSERT_EQ(ans1, pre1);
     ASSERT_EQ(ans2, pre2);
 }
 
 TEST(trap42) {
+    LeetCode::Solution42 sol;
     std::vector<int> test1{0,1,0,2,1,0,1,3,2,1,2,1};
     std::vector<int> test2{4,2,0,3,2,5};
 
     int ans1 = 6;
     int ans2 = 9;
 
-    int pre1 = LeetCode::trap42(test1);
-    int pre2 = LeetCode::trap42(test2);
+    int pre1 = sol.trap(test1);
+    int pre2 = sol.trap(test2);
 
     ASSERT_EQ(ans1, pre1);
     ASSERT_EQ(ans2, pre2);
 }
 
 TEST(largestRectangleArea84) {
+    LeetCode::Solution84 sol;
     std::vector<int> test1{2,1,5,6,2,3};
     std::vector<int> test2{2,4};
 
     int ans1 = 10;
     int ans2 = 4;
 
-    int pre1 = LeetCode::largestRectangleArea84(test1);
-    int pre2 = LeetCode::largestRectangleArea84(test2);
+    int pre1 = sol.largestRectangleArea(test1);
+    int pre2 = sol.largestRectangleArea(test2);
 
     ASSERT_EQ(ans1, pre1);
     ASSERT_EQ(ans2, pre2);

@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
-
+enable_testing()
 # add_subdirectory(sources/part01)
 # add_subdirectory(sources/part02)
 # add_subdirectory(sources/part03)
@@ -15,7 +15,7 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 # add_subdirectory(sources/part07)
 # add_subdirectory(sources/part08)
 # add_subdirectory(sources/part09)
-# add_subdirectory(sources/part10)
+add_subdirectory(sources/part10_dynamic_programming)
 add_subdirectory(sources/part11_monotonic_stack)
 
 add_subdirectory(tests)
