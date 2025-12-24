@@ -135,6 +135,37 @@ TEST(zerOneBackpack) {
     ASSERT_EQ(pre1, ans1);
 }
 
+TEST(canPartition) {
+    LeetCode::Solution416 sol;
+
+    std::vector<int> test1{1,5,11,5};
+    std::vector<int> test2{1,2,3,5};
+
+    bool res1 = true;
+    bool res2 = false;
+
+    bool pre1 = sol.canPartition(test1);
+    bool pre2 = sol.canPartition(test2);
+
+    ASSERT_EQ(pre1, res1);
+    ASSERT_EQ(pre2, res2);
+}
+
+TEST(lastStoneWeightII) {
+    LeetCode::Solution1049 sol;
+    std::vector<int> test1{2,7,4,1,8,1};
+    std::vector<int> test2{31,26,33,21,40};
+
+    int res1 = 1;
+    int res2 = 5;
+
+    int pre1 = sol.lastStoneWeightII(test1);
+    int pre2 = sol.lastStoneWeightII(test2);
+
+    ASSERT_EQ(pre1, res1);
+    ASSERT_EQ(pre2, res2);
+}
+
 int main() {
     std::cout << std::endl << "start testing!" << std::endl;
     RUN_TEST(fib509);
@@ -145,6 +176,8 @@ int main() {
     RUN_TEST(integerBreak343);
     RUN_TEST(numTrees96);
     RUN_TEST(zerOneBackpack);
+    RUN_TEST(canPartition);
+    RUN_TEST(lastStoneWeightII);
     std::cout << std::endl << "all tests passing!" << std::endl;
     return 0;
 }
