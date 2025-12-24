@@ -53,40 +53,50 @@ namespace LeetCode {
     class Solution96{
     public:
         int numTrees(int n);
+        // https://leetcode.cn/problems/unique-binary-search-trees/description/
     };
 
+    class Solution01pb{
+    public:
+        int zerOneBackpack(int bagweight, std::vector<int> weights, std::vector<int> values);
+        // https://kamacoder.com/problempage.php?pid=1046
+    };
 
+    class Solution416{
+    public:
+        bool canPartition(std::vector<int>& nums);
+        // LeetCode: https://leetcode.cn/problems/partition-equal-subset-sum/
+    };
 
+    class Solution1049{
+    public:
+        int lastStoneWeightII(std::vector<int>& stones);
+        // LeetCode: https://leetcode.cn/problems/last-stone-weight-ii/description/
+    };
 
+    class Solution494{
+    public:
+        int findTargetSumWays(std::vector<int>& nums, int target);
+        // https://leetcode.cn/problems/target-sum/description/
+    };
 
+    class Solution474{
+    public:
+        int findMaxForm474(std::vector<std::string>& strs, int m, int n);
+        // https://leetcode.cn/problems/ones-and-zeroes/
+    };
 
+    class Solution647{
+    public:
+        int countSubstrings647(std::string s);
+        // https://leetcode.cn/problems/palindromic-substrings/
+    };
 
-
-
-
-
-
-
-void ZerOneBackpack();
-// https://kamacoder.com/problempage.php?pid=1046
-
-bool CanPartition416(std::vector<int>& nums);
-// LeetCode: https://leetcode.cn/problems/partition-equal-subset-sum/
-
-int LastStoneWeightII1049(std::vector<int>& stones);
-// LeetCode: https://leetcode.cn/problems/last-stone-weight-ii/description/
-
-int FindTargetSumWays494(std::vector<int>& nums, int target);
-// https://leetcode.cn/problems/target-sum/description/
-
-int FindMaxForm474(std::vector<std::string>& strs, int m, int n);
-// https://leetcode.cn/problems/ones-and-zeroes/
-
-int countSubstrings647(std::string s);
-// https://leetcode.cn/problems/palindromic-substrings/
-
-int longestPalindromeSubseq516(std::string s);
-// https://leetcode.cn/problems/longest-palindromic-subsequence/
+    class Solution516{
+    public:
+        int longestPalindromeSubseq516(std::string s);
+        // https://leetcode.cn/problems/longest-palindromic-subsequence/
+    };
 
 
 };

@@ -106,6 +106,35 @@ TEST(integerBreak343) {
     ASSERT_EQ(pre2, ans2);
 }
 
+TEST(numTrees96) {
+    LeetCode::Solution96 sol;
+    int test1 = 3;
+    int test2 = 1;
+
+    int ans1 = 5;
+    int ans2 = 1;
+
+    int pre1 = sol.numTrees(test1);
+    int pre2 = sol.numTrees(test2);
+
+    ASSERT_EQ(pre1, ans1);
+    ASSERT_EQ(pre2, ans2);
+}
+
+TEST(zerOneBackpack) {
+    LeetCode::Solution01pb sol;
+
+    int test1_bagweight = 1;
+    std::vector<int> test1_weights{2,2,3,1,5,2};
+    std::vector<int> test1_values{2,3,1,5,4,3};
+
+    int ans1 = 5;
+
+    int pre1 = sol.zerOneBackpack(test1_bagweight, test1_weights, test1_values);
+
+    ASSERT_EQ(pre1, ans1);
+}
+
 int main() {
     std::cout << std::endl << "start testing!" << std::endl;
     RUN_TEST(fib509);
@@ -114,6 +143,8 @@ int main() {
     RUN_TEST(uniquePaths62);
     RUN_TEST(uniquePathsWithObstacles63);
     RUN_TEST(integerBreak343);
+    RUN_TEST(numTrees96);
+    RUN_TEST(zerOneBackpack);
     std::cout << std::endl << "all tests passing!" << std::endl;
     return 0;
 }
