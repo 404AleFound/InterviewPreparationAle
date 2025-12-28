@@ -58,6 +58,7 @@ namespace LeetCode {
         // https://leetcode.cn/problems/unique-binary-search-trees/description/
     };
 
+    // ======================================= 零一背包 =======================================
     class Solution01pb{
     public:
         int zerOneBackpack(int bagweight, std::vector<int> weights, std::vector<int> values);
@@ -69,26 +70,39 @@ namespace LeetCode {
     public:
         bool canPartition(std::vector<int>& nums);
         // 2025/12/24
-        // LeetCode: https://leetcode.cn/problems/partition-equal-subset-sum/
+        // https://leetcode.cn/problems/partition-equal-subset-sum/
     };
 
     class Solution1049{
     public:
         int lastStoneWeightII(std::vector<int>& stones);
         // 2025/12/24
-        // LeetCode: https://leetcode.cn/problems/last-stone-weight-ii/description/
+        // https://leetcode.cn/problems/last-stone-weight-ii/description/
     };
 
     class Solution494{
     public:
         int findTargetSumWays(std::vector<int>& nums, int target);
+        // 2025/12/27
         // https://leetcode.cn/problems/target-sum/description/
     };
 
     class Solution474{
     public:
-        int findMaxForm474(std::vector<std::string>& strs, int m, int n);
+        int findMaxForm(std::vector<std::string>& strs, int m, int n);
+        // 2025/12/28
         // https://leetcode.cn/problems/ones-and-zeroes/
+
+        int count_zero(const std::string& str);
+        int count_one(const std::string& str);
+    };
+
+    // ======================================= 完全背包 =======================================
+    class Solutionfullpb{
+    public:
+        int fullBackpack(int bagweight, std::vector<int> values, std::vector<int> weights);
+        // 2025/12/28
+        // https://kamacoder.com/problempage.php?pid=1052
     };
 
     class Solution647{
@@ -96,6 +110,7 @@ namespace LeetCode {
         int countSubstrings647(std::string s);
         // https://leetcode.cn/problems/palindromic-substrings/
     };
+
 
     class Solution516{
     public:

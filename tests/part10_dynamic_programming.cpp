@@ -166,6 +166,40 @@ TEST(lastStoneWeightII) {
     ASSERT_EQ(pre2, res2);
 }
 
+TEST(findTargetSumWays) {
+    LeetCode::Solution494 sol;
+    std::vector<int> test1_1{1,1,1,1,1};
+    int test1_2 = 3;
+    std::vector<int> test2_1{1};
+    int test2_2 = 1;
+
+    int ans1 = 5;
+    int ans2 = 1;
+
+    int pre1 = sol.findTargetSumWays(test1_1, test1_2);
+    int pre2 = sol.findTargetSumWays(test2_1, test2_2);
+
+    ASSERT_EQ(pre1, ans1);
+    ASSERT_EQ(pre2, ans2);
+}
+
+TEST(findMaxForm){
+    LeetCode::Solution474 sol;
+    std::vector<std::string> test1{"10", "0001", "111001", "1", "0"};
+    int test1_1 = 5, test1_2 = 3;
+    std::vector<std::string> test2{"10", "0", "1"};
+    int test2_1 = 1, test2_2 = 1;
+
+    int ans1 = 4;
+    int ans2 = 2;
+
+    int pre1 = sol.findMaxForm(test1, test1_1, test1_2);
+    int pre2 = sol.findMaxForm(test2, test2_1, test2_2);
+
+    ASSERT_EQ(pre1, ans1);
+    ASSERT_EQ(pre2, ans2);
+}
+
 int main() {
     std::cout << std::endl << "start testing!" << std::endl;
     RUN_TEST(fib509);
@@ -178,6 +212,8 @@ int main() {
     RUN_TEST(zerOneBackpack);
     RUN_TEST(canPartition);
     RUN_TEST(lastStoneWeightII);
+    RUN_TEST(findTargetSumWays);
+    // RUN_TEST(findMaxForm);
     std::cout << std::endl << "all tests passing!" << std::endl;
     return 0;
 }
