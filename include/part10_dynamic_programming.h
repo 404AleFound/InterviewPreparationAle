@@ -7,8 +7,10 @@
 #include <map>
 #include <cstdint>
 #include <unordered_map>
+#include <unordered_set>
 #include <stack>
 #include <iomanip>
+#include <climits>
 
 namespace LeetCode {
     class Solution509{
@@ -59,7 +61,7 @@ namespace LeetCode {
     };
 
     // ======================================= 零一背包 =======================================
-    class Solution01pb{
+    class Solution01bp{
     public:
         int zerOneBackpack(int bagweight, std::vector<int> weights, std::vector<int> values);
         // 2025/12/24
@@ -98,26 +100,79 @@ namespace LeetCode {
     };
 
     // ======================================= 完全背包 =======================================
-    class Solutionfullpb{
+    class Solutionfullbp{
     public:
         int fullBackpack(int bagweight, std::vector<int> values, std::vector<int> weights);
         // 2025/12/28
         // https://kamacoder.com/problempage.php?pid=1052
     };
 
-    class Solution647{
+    class Solution518{
     public:
-        int countSubstrings647(std::string s);
-        // https://leetcode.cn/problems/palindromic-substrings/
+        int change(int amount, std::vector<int>& coins);
+        // 2025/12/29
+        // https://leetcode.cn/problems/coin-change-ii/description/
+    };
+    
+    class Solution377{
+    public:
+        int combinationSum4(std::vector<int>& nums, int target);
+        // 2025/12/29
+        // https://leetcode.cn/problems/combination-sum-iv/
+    };
+
+    class Solution322{
+    public:
+        int coinChange(std::vector<int>& coins, int amount);
+        // 2025/12/29
+        // https://leetcode.cn/problems/coin-change/
+    };
+
+    class Solution279{
+    public:
+        int numSquares(int n);
+        // 2025/12/29
+        // https://leetcode.cn/problems/perfect-squares/
+    };
+
+    class SolutionStair{
+    public:
+        int climbStair(int m, int n);
+        // 2025/12/31
+        // https://kamacoder.com/problempage.php?pid=1067
+    };
+
+    class Solution139{
+    public:
+        bool wordBreak(std::string s, std::vector<std::string>& wordDict);
+        // 2025/12/31
+        // https://leetcode.cn/problems/word-break/description/
     };
 
 
-    class Solution516{
+    // ======================================= 多重背包 =======================================
+    class SolutionMulbp{
     public:
-        int longestPalindromeSubseq516(std::string s);
+        int multiBackpack(int bagweight, std::vector<int> values, std::vector<int> weights, std::vector<int> nums);
         // https://leetcode.cn/problems/longest-palindromic-subsequence/
+        // 2025/12/30
     };
 
+    // ======================================= 抢劫问题 =======================================
+    class Solution198{ 
+    public:
+        int rob(std::vector<int>& nums);
+        // https://leetcode.cn/problems/house-robber/
+        // 2025/12/31
+    };
+
+    class Solution213{ 
+    public:
+        int robrange(const std::vector<int>& nums, int start, int end);
+        int rob(std::vector<int>& nums);
+        // https://leetcode.cn/problems/house-robber-ii/description/
+        // 2025/12/31
+    };
 
 };
 #endif // DYNAMIC_PROGRAMMING_H

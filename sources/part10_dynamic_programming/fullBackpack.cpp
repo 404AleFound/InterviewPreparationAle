@@ -8,5 +8,17 @@
 
 /*
     解题思路：
-    - 
+    - 基本和01背包相同
+    - 对于一维滑动数组中背包的遍历必须从左到右进行遍历。
 */
+
+int LeetCode::Solutionfullbp::fullBackpack(int bagweight, std::vector<int> values, std::vector<int> weights) {
+    std::vector<int> dp(bagweight+1, 0);
+
+    for (int i = 0; i < values.size(); i++){
+        for (int j = 0; j <= bagweight; j++) {
+            if (j - weights[i] >= 0) dp[j] = std::max(dp[j], values[i] + dp[j - weights[i]]);
+        }
+    }
+    return dp[bagweight];
+}

@@ -27,7 +27,7 @@
     - 迭代顺序：由于先迭代背包还是先迭代材料不重要，因此从头到尾依次迭代即可
 */
 
-int LeetCode::Solution01pb::zerOneBackpack(int bagweight, std::vector<int> weights, std::vector<int> values) {
+int LeetCode::Solution01bp::zerOneBackpack(int bagweight, std::vector<int> weights, std::vector<int> values) {
     std::vector<int> dp(bagweight+1, 0);
     for (int j = 0; j <= values.size(); j++) dp[j] = weights[0] < j ? values[0] : 0;
 

@@ -31,7 +31,6 @@ namespace LeetCode {
         // https://leetcode.cn/problems/next-greater-element-ii/submissions/685312642/
     };
 
-
     class Solution42{
     public:
         int trap(std::vector<int>& height);
