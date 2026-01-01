@@ -13,6 +13,15 @@
 #include <climits>
 
 namespace LeetCode {
+    struct TreeNode {
+        int val;
+        TreeNode *left;
+        TreeNode *right;
+        TreeNode() : val(0), left(nullptr), right(nullptr) {}
+        TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+        TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+    };
+
     class Solution509{
     public:
         int fib(int n);
@@ -172,6 +181,40 @@ namespace LeetCode {
         int rob(std::vector<int>& nums);
         // https://leetcode.cn/problems/house-robber-ii/description/
         // 2025/12/31
+    };
+
+    class Solution337{
+    public:
+        int rob(TreeNode* root);
+        std::vector<int> robTree(TreeNode* cur); 
+    };
+    // ======================================= 买卖股票 =======================================
+    class Solution121{
+    public:
+        int maxProfit(std::vector<int>& prices);
+        // https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/submissions/688493717/
+        // 2026/1/1
+    };
+
+    class Solution122{
+    public:
+        int maxProfit(std::vector<int>& prices);
+        // https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/description/
+        // 2026/1/1
+    };
+
+    class Solution123{
+    public:
+        int maxProfit(std::vector<int>& prices);
+        // https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/description/
+        // 2026/1/1
+    };
+
+    class Solution188{
+    public:
+        int maxProfit(int k, std::vector<int>& prices);
+        // https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/description/
+        // 2026/1/1
     };
 
 };

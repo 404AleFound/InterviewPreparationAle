@@ -357,6 +357,91 @@ TEST(rob_){
     ASSERT_EQ(pre2, ans2);
 }
 
+TEST(ron__){
+    // LeetCode::Solution337 sol;
+    // std::vector<int> test1{3,2,3,NULL,3,NULL,1};
+    // std::vector<int> test2{3,4,5,1,3,NULL,1};
+    // int ans1 = 7;
+    // int ans2 = 9;
+    // int pre1 = sol.rob(test1);
+    // int pre2 = sol.rob(test2);
+
+}
+
+TEST(maxProfit121){
+    LeetCode::Solution121 sol;
+    std::vector<int> test1{7,1,5,3,6,4};
+    std::vector<int> test2{7,6,4,3,1};
+
+    int ans1 = 5;
+    int ans2 = 0;
+
+    int pre1 = sol.maxProfit(test1);
+    int pre2 = sol.maxProfit(test2);
+
+    ASSERT_EQ(pre1, ans1);
+    ASSERT_EQ(pre2, ans2);
+}
+
+TEST(maxProfit122){
+    LeetCode::Solution122 sol;
+    std::vector<int> test1{7,1,5,3,6,4};
+    std::vector<int> test2{1,2,3,4,5};
+    std::vector<int> test3{7,6,4,3,1};
+
+    int ans1 = 7;
+    int ans2 = 4;
+    int ans3 = 0;
+
+    int pre1 = sol.maxProfit(test1);
+    int pre2 = sol.maxProfit(test2);
+    int pre3 = sol.maxProfit(test3);
+
+    ASSERT_EQ(pre1, ans1);
+    ASSERT_EQ(pre2, ans2);
+    ASSERT_EQ(pre3, ans3);
+}
+
+TEST(maxProfit123){
+    LeetCode::Solution123 sol;
+    std::vector<int> test1{3,3,5,0,0,3,1,4};
+    std::vector<int> test2{1,2,3,4,5};
+    std::vector<int> test3{7,6,4,3,1};
+    std::vector<int> test4{1};
+
+    int ans1 = 6;
+    int ans2 = 4;
+    int ans3 = 0;
+    int ans4 = 1;
+
+    int pre1 = sol.maxProfit(test1);
+    int pre2 = sol.maxProfit(test2);
+    int pre3 = sol.maxProfit(test3);
+    int pre4 = sol.maxProfit(test4);
+
+    ASSERT_EQ(pre1, ans1);
+    ASSERT_EQ(pre2, ans2);
+    ASSERT_EQ(pre3, ans3);
+    ASSERT_EQ(pre4, ans4);
+}
+
+TEST(maxProfit188){
+    LeetCode::Solution188 sol;
+    std::vector<int> test1{2,4,1};
+    int k1 = 2;
+    std::vector<int> test2{3,2,6,5,0,3};
+    int k2 = 2;
+
+    int ans1 = 5;
+    int ans2 = 0;
+
+    int pre1 = sol.maxProfit(k1, test1);
+    int pre2 = sol.maxProfit(k2, test2);
+
+    ASSERT_EQ(pre1, ans1);
+    ASSERT_EQ(pre2, ans2);
+}
+
 int main() {
     std::cout << std::endl << "start testing!" << std::endl;
     RUN_TEST(fib509);
@@ -381,6 +466,10 @@ int main() {
     // RUN_TEST(findMaxForm);
     RUN_TEST(rob);
     RUN_TEST(rob_);
+    // RUN_TEST(maxProfit121);
+    // RUN_TEST(maxProfit122);
+    // RUN_TEST(maxProfit123);
+    // RUN_TEST(maxProfit188);
     std::cout << std::endl << "all tests passing!" << std::endl;
     return 0;
 }
