@@ -83,6 +83,43 @@ namespace LeetCode{
         std::vector<std::vector<int>> combinationSum2(std::vector<int>& candidates, int target);
     };
 
+    class Solution131{
+    // https://leetcode.cn/problems/palindrome-partitioning/
+    // 2026/1/14
+        std::vector<std::string> path;
+        std::vector<std::vector<std::string>> res;
+        bool isPalindrome(const std::string& s, int left, int right);
+        void backtracking(const std::string& s, int index);
+        std::vector<std::vector<std::string>> partition(std::string s);
+    };
+
+    class Solution93{
+    // https://leetcode.cn/problems/restore-ip-addresses/
+    // 2026/1/14
+        std::string path;
+        std::vector<std::string> res;
+        bool isIP(const std::string& s, int left, int right);
+        void backtracking(const std::string& s, int index, int countPoint);
+        std::vector<std::string> restoreIpAddresses(std::string s);
+    };
+
+    class Solution78{
+    // https://leetcode.cn/problems/subsets/
+    // 2026/1/14
+        std::vector<int> path;
+        std::vector<std::vector<int>> res;
+        void backtracking(const std::vector<int>& nums, int index);
+        std::vector<std::vector<int>> subsets(std::vector<int>& nums);
+    };
+
+    class Solution90{
+    // https://leetcode.cn/problems/subsets-ii/
+    // 22026/1/14
+        std::vector<int> path;
+        std::vector<std::vector<int>> res;
+        void backtracking(const std::vector<int>& nums, int index, std::vector<bool>& used);
+        std::vector<std::vector<int>> subsetsWithDup(std::vector<int>& nums);
+    };
 }
 
 #endif
