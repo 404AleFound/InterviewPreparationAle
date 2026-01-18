@@ -86,39 +86,101 @@ namespace LeetCode{
     class Solution131{
     // https://leetcode.cn/problems/palindrome-partitioning/
     // 2026/1/14
+    private:
         std::vector<std::string> path;
         std::vector<std::vector<std::string>> res;
         bool isPalindrome(const std::string& s, int left, int right);
         void backtracking(const std::string& s, int index);
+    public:
         std::vector<std::vector<std::string>> partition(std::string s);
     };
 
     class Solution93{
     // https://leetcode.cn/problems/restore-ip-addresses/
     // 2026/1/14
+    private:
         std::string path;
         std::vector<std::string> res;
         bool isIP(const std::string& s, int left, int right);
         void backtracking(const std::string& s, int index, int countPoint);
+    public:
         std::vector<std::string> restoreIpAddresses(std::string s);
     };
 
     class Solution78{
     // https://leetcode.cn/problems/subsets/
     // 2026/1/14
+    private:
         std::vector<int> path;
         std::vector<std::vector<int>> res;
         void backtracking(const std::vector<int>& nums, int index);
+    public:
         std::vector<std::vector<int>> subsets(std::vector<int>& nums);
     };
 
     class Solution90{
     // https://leetcode.cn/problems/subsets-ii/
     // 22026/1/14
+    private:
         std::vector<int> path;
         std::vector<std::vector<int>> res;
         void backtracking(const std::vector<int>& nums, int index, std::vector<bool>& used);
+    public:
         std::vector<std::vector<int>> subsetsWithDup(std::vector<int>& nums);
+    };
+
+    class Solution491{
+    // https://leetcode.cn/problems/non-decreasing-subsequences/
+    // 2026/1/14
+    private:
+        std::vector<int> path;
+        std::vector<std::vector<int>> res;
+        void backtracking(const std::vector<int>& nums, int index);
+    public:
+        std::vector<std::vector<int>> findSubsequences(std::vector<int>& nums);
+    };
+
+    class Solution46{
+    // https://leetcode.cn/problems/permutations/
+    // 2026/1/14
+    private:
+        std::vector<int> path;
+        std::vector<std::vector<int>> res;
+        void backtracking(const std::vector<int>& nums, std::vector<bool>& used);
+    public:
+        std::vector<std::vector<int>> permute(std::vector<int>& nums);
+    };
+
+    class Solution47{
+    // https://leetcode.cn/problems/permutations-ii/submissions/691389617/
+    // 2026/1/14
+    private:
+        std::vector<int> path;
+        std::vector<std::vector<int>> res;
+        void backtracking(const std::vector<int>& nums, std::vector<bool>& used);
+    public:
+        std::vector<std::vector<int>> permuteUnique(std::vector<int>& nums);
+    };
+
+    class Solution51{
+    // https://www.programmercarl.com/0051.N%E7%9A%87%E5%90%8E.html
+    // 2026/1/15
+    private: 
+        std::vector<std::vector<std::string>> res;
+        bool canUse(int row, int col, const std::vector<std::string>& chessboard);
+        void backtracking(const int& n, int numRow, std::vector<std::string> chessboard);
+    public:
+        std::vector<std::vector<std::string>> solveNQueens(int n);
+    };
+
+    class Solution37{
+    // https://leetcode.cn/problems/sudoku-solver/
+    // 2026/1/15
+    private: 
+        bool backtracking(std::vector<std::vector<char>>& board);
+        bool isvalid(int row, int col, char val, std::vector<std::vector<char>>& board);
+    public:
+        void solveSudoku(std::vector<std::vector<char>>& board);
     };
 }
 
