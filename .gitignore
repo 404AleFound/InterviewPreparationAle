@@ -27,3 +27,6 @@ Makefile
 # 编译产物
 bin/
 lib/
+
+# 个别文件夹
+resume/
